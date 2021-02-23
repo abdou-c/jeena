@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Jeena-Shop</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="eCommerce HTML Template Free Download" name="keywords">
+        <meta content="eCommerce HTML Template Free Download" name="description">
+
+        <!-- Favicon -->
+        <link href="img/favicon.ico" rel="icon">
+
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Source+Code+Pro:700,900&display=swap" rel="stylesheet">
+
+        <!-- CSS Libraries -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="lib/slick/slick.css" rel="stylesheet">
+        <link href="lib/slick/slick-theme.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <!-- Top bar Start -->
+        <div class="top-bar">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <i class="fa fa-envelope"></i>
+                        jeena@gmail.com
+                    </div>
+                    <div class="col-sm-6">
+                        <i class="fa fa-phone-alt"></i>
+                        +221 781471108
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Top bar End -->
+        
+        <!-- Nav Bar Start -->
+        <div class="nav">
+            <div class="container-fluid">
+                <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+                    <a href="#" class="navbar-brand">MENU</a>
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                        <div class="navbar-nav mr-auto">
+                            <a href="index.html" class="nav-item nav-link">Accueil</a>
+                            <a href="product-list.html" class="nav-item nav-link">Produits</a>
+                            <a href="cart.html" class="nav-item nav-link">Commandes</a>
+                            <a href="my-account.html" class="nav-item nav-link active">Mon Compte</a>
+
+                        </div>
+                        <div class="navbar-nav ml-auto">
+                            <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Profil</a>
+                                <div class="dropdown-menu">
+                                    <a href="#" class="dropdown-item">Se Connecter</a>
+                                    <a href="#" class="dropdown-item">S'inscrire</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- Nav Bar End -->      
+        
+        <!-- Bottom Bar Start -->
+        <div class="bottom-bar">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-md-3">
+                        <div class="logo">
+                            <a href="index.html">
+                                <h1>Jeena-Shop</h1>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="search">
+                            <input type="text" placeholder="Search">
+                            <button><i class="fa fa-search"></i></button>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="user">
+                            <a href="wishlist.html" class="btn wishlist">
+                                <i class="fa fa-heart"></i>
+                                <span>(0)</span>
+                            </a>
+                            <a href="cart.html" class="btn cart">
+                                <i class="fa fa-shopping-cart"></i>
+                                <span>(0)</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bottom Bar End --> 
+        
+        <!-- Breadcrumb Start -->
+        <div class="breadcrumb-wrap">
+            <div class="container-fluid">
+                <ul class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Accueil</a></li>
+                    <li class="breadcrumb-item"><a href="#">Produits</a></li>
+                    <li class="breadcrumb-item active">Mon Compte</li>
+                </ul>
+            </div>
+        </div>
+        <!-- Breadcrumb End -->
+        
+        <!-- My Account Start -->
+        <div class="my-account">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="nav flex-column nav-pills" role="tablist" aria-orientation="vertical">
+                            <a class="nav-link active" id="dashboard-nav" data-toggle="pill" href="#dashboard-tab" role="tab"><i class="fa fa-tachometer-alt"></i>Tableau de bord</a>
+                            <a class="nav-link" id="orders-nav" data-toggle="pill" href="#orders-tab" role="tab"><i class="fa fa-shopping-bag"></i>Ordres</a>
+                            <a class="nav-link" id="payment-nav" data-toggle="pill" href="#payment-tab" role="tab"><i class="fa fa-credit-card"></i>Mode de paiement</a>
+                            <a class="nav-link" id="address-nav" data-toggle="pill" href="#address-tab" role="tab"><i class="fa fa-map-marker-alt"></i>adresse</a>
+                            <a class="nav-link" id="account-nav" data-toggle="pill" href="#account-tab" role="tab"><i class="fa fa-user"></i>Détails du compte</a>
+                            <a class="nav-link" href="index.html"><i class="fa fa-sign-out-alt"></i>Se déconnecter</a>
+                        </div>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="tab-content">
+                            <div class="tab-pane fade show active" id="dashboard-tab" role="tabpanel" aria-labelledby="dashboard-nav">
+                                <h4>Tableau de bord</h4>
+                                <p>
+                                    Avec Jeena-Shop vous achetez vos produits à des prix imbattables
+                                </p> 
+                            </div>
+                            <div class="tab-pane fade" id="orders-tab" role="tabpanel" aria-labelledby="orders-nav">
+                                <div class="table-responsive">
+                                    <table class="table table-bordered">
+                                        <thead class="thead-dark">
+                                            <tr>
+                                                <th>Numéro</th>
+                                                <th>Produit</th>
+                                                <th>Date</th>
+                                                <th>Prix</th>
+                                                <th>Status</th>
+                                                <th>Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>Pantalon</td>
+                                                <td>01 Jan 2021</td>
+                                                <td>Fcfa 7.000</td>
+                                                <td>Approuvée</td>
+                                                <td><button class="btn">Voir</button></td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>Chaine</td>
+                                                <td>23 Feb 2021</td>
+                                                <td>Fcfa 15.000</td>
+                                                <td>Approuvée</td>
+                                                <td><button class="btn">Voir</button></td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>Lunette</td>
+                                                <td>19 Feb 2021</td>
+                                                <td>Fcfa 10.000</td>
+                                                <td>Approved</td>
+                                                <td><button class="btn">View</button></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="payment-tab" role="tabpanel" aria-labelledby="payment-nav">
+                                <h4>Mode de paiement</h4>
+                                <p>
+                                   Ici vous payez avec tous les services bancaires du Sénégal en toute sécurité.
+                                </p> 
+                            </div>
+                            <div class="tab-pane fade" id="address-tab" role="tabpanel" aria-labelledby="address-nav">
+                                <h4>Adresse</h4>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h5>adresse de facturation</h5>
+                                        <p>Mermoz Dakar, Sénégal</p>
+                                        <p>Mobile: +221 781471108</p>
+                                        <button class="btn">Modifier adresse</button>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h5>adresse de livraison</h5>
+                                        <p>Sacrée Coeur</p>
+                                        <p>Mobile: +221 771234567</p>
+                                        <button class="btn">Modifer adresse</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="account-tab" role="tabpanel" aria-labelledby="account-nav">
+                                <h4>Détail du compte</h4>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <input class="form-control" type="text" placeholder="Nom">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input class="form-control" type="text" placeholder="Prénom">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input class="form-control" type="text" placeholder="Téléphone">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input class="form-control" type="text" placeholder="Email">
+                                    </div>
+                                    <div class="col-md-12">
+                                        <input class="form-control" type="text" placeholder="Adresse">
+                                    </div>
+                                    <div class="col-md-12">
+                                        <button class="btn">Mettre à jour le compte</button>
+                                        <br><br>
+                                    </div>
+                                </div>
+                                <h4>Changement de mot de passe</h4>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <input class="form-control" type="password" placeholder="Mot de passe actuel">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input class="form-control" type="text" placeholder="Nouveau mot de passe">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input class="form-control" type="text" placeholder="Confirmer le mot de pase">
+                                    </div>
+                                    <div class="col-md-12">
+                                        <button class="btn">Sauvegarder</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- My Account End -->
+        
+       <!-- Footer Start -->
+       <div class="footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-widget">
+                        <h2>Entrer en contact</h2>
+                        <div class="contact-info">
+                            <p><i class="fa fa-map-marker"></i>Mermoz Dakar, Sénégal</p>
+                            <p><i class="fa fa-envelope"></i>jeena@gmail.com</p>
+                            <p><i class="fa fa-phone"></i>+221 781471108</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-widget">
+                        <h2>Suivez nous</h2>
+                        <div class="contact-info">
+                            <div class="social">
+                                <a href=""><i class="fab fa-twitter"></i></a>
+                                <a href=""><i class="fab fa-facebook-f"></i></a>
+                                <a href=""><i class="fab fa-linkedin-in"></i></a>
+                                <a href=""><i class="fab fa-instagram"></i></a>
+                                <a href=""><i class="fab fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-widget">
+                        <h2>Informations</h2>
+                        <ul>
+                            <li><a href="#">A propos</a></li>
+                            <li><a href="#">Politique de confidentialité</a></li>
+                            <li><a href="#">Termes et conditions</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-widget">
+                        <h2>Informations d'achat</h2>
+                        <ul>
+                            <li><a href="#">Politique de paiement</a></li>
+                            <li><a href="#">Politique d'expédition</a></li>
+                            <li><a href="#">Politique de retour</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row payment align-items-center">
+                <div class="col-md-6">
+                    <div class="payment-method">
+                        <h2>Nous acceptons:</h2>
+                        <img src="img/or.png" alt="Payment Security" />
+                        <img src="img/wave.png" alt="Payment Security" />
+                        <img src="img/free.png" alt="Payment Security" />
+                        <img src="img/ria.jpg" alt="Payment Security" />
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="payment-security">
+                        <h2>Sécurisé par:</h2>
+                        <img src="img/godaddy.svg" alt="Payment Security" />
+                        <img src="img/norton.svg" alt="Payment Security" />
+                        <img src="img/ssl.svg" alt="Payment Security" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+    
+    <!-- Footer Bottom Start -->
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 copyright">
+                    <p>Copyright &copy; <a href="#">Jeena-Shop</a>. All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer Bottom End -->       
+
+        <!-- Back to Top -->
+        <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+        
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/slick/slick.min.js"></script>
+        
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+    </body>
+</html>
